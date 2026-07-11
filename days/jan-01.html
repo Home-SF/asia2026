@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>January 1 &middot; Tokyo, KL & Singapore</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<nav class="topnav"><div class="wrap">
+<a class="brand" href="../index.html">Tokyo, KL &amp; Singapore <em>2026–27</em></a>
+<div class="navlinks"><a class="back" href="../weather.html">Weather</a><a class="back" href="../restaurants-tokyo.html">Tokyo Dining</a><a class="back" href="../restaurants-kl.html">KL Dining</a><a class="back" href="../restaurants-singapore.html">Singapore Dining</a><a class="back" href="../activities-tokyo.html">Tokyo Sights</a><a class="back" href="../activities-kl.html">KL Sights</a><a class="back" href="../activities-singapore.html">Singapore Sights</a><a class="back" href="../location-map.html">Trip Map</a><a class="back" href="../index.html">&larr; All days</a></div>
+</div></nav>
+<header class="day-hero"><div class="wrap">
+<span class="tag travel">Singapore → San Francisco</span>
+<div class="num">Day 14 of 14</div>
+<h1>January 1</h1>
+<p class="weekday">Friday &middot; Return day</p>
+
+</div></header>
+<div class="wrap">
+
+<div class="timeline"><h3>Today's plan</h3><div class="event placeholder">
+  <div class="etime">TBD</div>
+  <div><div class="etitle">Flight — Singapore (SIN) to San Francisco (SFO)</div><div class="enote">Not yet booked</div><div class="event-addr"><div>Airport Blvd, Singapore</div></div><div class="event-map">
+  <iframe src="https://maps.google.com/maps?q=Singapore%20Changi%20Airport&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <div class="event-map-cap"><span>Singapore Changi Airport</span><a href="https://www.google.com/maps/search/?api=1&query=Singapore%20Changi%20Airport" target="_blank" rel="noopener">Open in Maps &rarr;</a></div>
+</div></div>
+</div>
+</div>
+
+<div class="photos-section">
+  <h3>Photos from this day</h3>
+  <p class="photos-note">Shared with anyone who visits this site &mdash; photos upload to the family's shared album and appear here for everyone, sorted automatically by the date the photo was taken.</p>
+  <div class="photo-dropzone" id="dropzone-jan-01">
+    <input type="file" id="fileinput-jan-01" accept="image/*" multiple style="display:none">
+    <span class="dz-label">Drop photos here or click to add</span>
+  </div>
+  <div class="photo-status" id="status-jan-01"></div>
+  <div class="photo-gallery" id="gallery-jan-01"></div>
+</div>
+</div>
+<div class="wrap"><div class="pager"><a class="prev" href="dec-31.html"><span class="plabel">&larr; Previous</span><span class="pdate">December 31</span></a><a class="next disabled"><span class="plabel">Next &rarr;</span><span class="pdate">&mdash;</span></a></div></div>
+<footer><div class="wrap">Tokyo, KL &amp; Singapore 2026–27 &middot; <a href="../index.html">Back to all days</a></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-app-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-firestore-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-storage-compat.min.js"></script>
+<script src="../assets/firebase-config.js"></script>
+<script src="../assets/photos.js"></script>
+<script>
+(function() {
+  var dayDate = "2027-01-01";
+  var zone = document.getElementById("dropzone-jan-01");
+  var input = document.getElementById("fileinput-jan-01");
+  var status = document.getElementById("status-jan-01");
+  var gallery = document.getElementById("gallery-jan-01");
+  TripPhotos.initUploadZone(zone, input, status);
+  TripPhotos.renderDayGallery(gallery, dayDate);
+})();
+</script>
+</body></html>

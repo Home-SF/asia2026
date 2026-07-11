@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>December 20 &middot; Tokyo, KL & Singapore</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<nav class="topnav"><div class="wrap">
+<a class="brand" href="../index.html">Tokyo, KL &amp; Singapore <em>2026–27</em></a>
+<div class="navlinks"><a class="back" href="../weather.html">Weather</a><a class="back" href="../restaurants-tokyo.html">Tokyo Dining</a><a class="back" href="../restaurants-kl.html">KL Dining</a><a class="back" href="../restaurants-singapore.html">Singapore Dining</a><a class="back" href="../activities-tokyo.html">Tokyo Sights</a><a class="back" href="../activities-kl.html">KL Sights</a><a class="back" href="../activities-singapore.html">Singapore Sights</a><a class="back" href="../location-map.html">Trip Map</a><a class="back" href="../index.html">&larr; All days</a></div>
+</div></nav>
+<header class="day-hero"><div class="wrap">
+<span class="tag tokyo">Tokyo</span>
+<div class="num">Day 02 of 14</div>
+<h1>December 20</h1>
+<p class="weekday">Sunday &middot; Arrival in Tokyo</p>
+<div class="hotel-line">Staying at <b>Hotel TBD</b></div>
+</div></header>
+<div class="wrap">
+
+<div class="timeline"><h3>Today's plan</h3><div class="event">
+  <div class="etime">8:00 PM</div>
+  <div><div class="etitle">Land in Tokyo — Narita (NRT)</div><div class="enote">Flight ZG 025 from San Francisco · Terminal 1</div><a class="track-live-link" href="https://www.flightaware.com/live/flight/TZP25" target="_blank" rel="noopener">&#9992;&#65039; Track this flight live</a><div class="event-addr"><div>1-1 Furugome, Narita, Chiba 282-0004, Japan</div></div><div class="event-map">
+  <iframe src="https://maps.google.com/maps?q=Narita%20International%20Airport&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  <div class="event-map-cap"><span>Narita International Airport</span><a href="https://www.google.com/maps/search/?api=1&query=Narita%20International%20Airport" target="_blank" rel="noopener">Open in Maps &rarr;</a></div>
+</div></div>
+</div>
+<div class="event placeholder">
+  <div class="etime">&mdash;</div>
+  <div><div class="etitle">Check in — Hotel TBD</div><div class="enote">Hotel not yet booked</div></div>
+</div>
+</div>
+
+<div class="photos-section">
+  <h3>Photos from this day</h3>
+  <p class="photos-note">Shared with anyone who visits this site &mdash; photos upload to the family's shared album and appear here for everyone, sorted automatically by the date the photo was taken.</p>
+  <div class="photo-dropzone" id="dropzone-dec-20">
+    <input type="file" id="fileinput-dec-20" accept="image/*" multiple style="display:none">
+    <span class="dz-label">Drop photos here or click to add</span>
+  </div>
+  <div class="photo-status" id="status-dec-20"></div>
+  <div class="photo-gallery" id="gallery-dec-20"></div>
+</div>
+</div>
+<div class="wrap"><div class="pager"><a class="prev" href="dec-19.html"><span class="plabel">&larr; Previous</span><span class="pdate">December 19</span></a><a class="next" href="dec-21.html"><span class="plabel">Next &rarr;</span><span class="pdate">December 21</span></a></div></div>
+<footer><div class="wrap">Tokyo, KL &amp; Singapore 2026–27 &middot; <a href="../index.html">Back to all days</a></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-app-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-firestore-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-storage-compat.min.js"></script>
+<script src="../assets/firebase-config.js"></script>
+<script src="../assets/photos.js"></script>
+<script>
+(function() {
+  var dayDate = "2026-12-20";
+  var zone = document.getElementById("dropzone-dec-20");
+  var input = document.getElementById("fileinput-dec-20");
+  var status = document.getElementById("status-dec-20");
+  var gallery = document.getElementById("gallery-dec-20");
+  TripPhotos.initUploadZone(zone, input, status);
+  TripPhotos.renderDayGallery(gallery, dayDate);
+})();
+</script>
+</body></html>

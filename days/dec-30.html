@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>December 30 &middot; Tokyo, KL & Singapore</title>
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<nav class="topnav"><div class="wrap">
+<a class="brand" href="../index.html">Tokyo, KL &amp; Singapore <em>2026–27</em></a>
+<div class="navlinks"><a class="back" href="../weather.html">Weather</a><a class="back" href="../restaurants-tokyo.html">Tokyo Dining</a><a class="back" href="../restaurants-kl.html">KL Dining</a><a class="back" href="../restaurants-singapore.html">Singapore Dining</a><a class="back" href="../activities-tokyo.html">Tokyo Sights</a><a class="back" href="../activities-kl.html">KL Sights</a><a class="back" href="../activities-singapore.html">Singapore Sights</a><a class="back" href="../location-map.html">Trip Map</a><a class="back" href="../index.html">&larr; All days</a></div>
+</div></nav>
+<header class="day-hero"><div class="wrap">
+<span class="tag singapore">Singapore</span>
+<div class="num">Day 12 of 14</div>
+<h1>December 30</h1>
+<p class="weekday">Wednesday &middot; Day 2 in Singapore</p>
+<div class="hotel-line">Staying at <b>Hotel TBD</b></div>
+</div></header>
+<div class="wrap">
+
+<div class="empty-day">Nothing added yet for this day &mdash; plans TBD.</div>
+
+<div class="photos-section">
+  <h3>Photos from this day</h3>
+  <p class="photos-note">Shared with anyone who visits this site &mdash; photos upload to the family's shared album and appear here for everyone, sorted automatically by the date the photo was taken.</p>
+  <div class="photo-dropzone" id="dropzone-dec-30">
+    <input type="file" id="fileinput-dec-30" accept="image/*" multiple style="display:none">
+    <span class="dz-label">Drop photos here or click to add</span>
+  </div>
+  <div class="photo-status" id="status-dec-30"></div>
+  <div class="photo-gallery" id="gallery-dec-30"></div>
+</div>
+</div>
+<div class="wrap"><div class="pager"><a class="prev" href="dec-29.html"><span class="plabel">&larr; Previous</span><span class="pdate">December 29</span></a><a class="next" href="dec-31.html"><span class="plabel">Next &rarr;</span><span class="pdate">December 31</span></a></div></div>
+<footer><div class="wrap">Tokyo, KL &amp; Singapore 2026–27 &middot; <a href="../index.html">Back to all days</a></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-app-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-firestore-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-storage-compat.min.js"></script>
+<script src="../assets/firebase-config.js"></script>
+<script src="../assets/photos.js"></script>
+<script>
+(function() {
+  var dayDate = "2026-12-30";
+  var zone = document.getElementById("dropzone-dec-30");
+  var input = document.getElementById("fileinput-dec-30");
+  var status = document.getElementById("status-dec-30");
+  var gallery = document.getElementById("gallery-dec-30");
+  TripPhotos.initUploadZone(zone, input, status);
+  TripPhotos.renderDayGallery(gallery, dayDate);
+})();
+</script>
+</body></html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip Map &middot; Tokyo, KL & Singapore</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<nav class="topnav"><div class="wrap">
+<a class="brand" href="index.html">Tokyo, KL &amp; Singapore <em>2026–27</em></a>
+<div class="navlinks"><a class="back" href="weather.html">Weather</a><a class="back" href="restaurants-tokyo.html">Tokyo Dining</a><a class="back" href="restaurants-kl.html">KL Dining</a><a class="back" href="restaurants-singapore.html">Singapore Dining</a><a class="back" href="activities-tokyo.html">Tokyo Sights</a><a class="back" href="activities-kl.html">KL Sights</a><a class="back" href="activities-singapore.html">Singapore Sights</a><a class="back" href="index.html">&larr; All days</a></div>
+</div></nav>
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Where we actually went</p>
+<h1>Trip Map</h1>
+<p class="sub">Upload a location export from Google or Apple and it'll show up here as your own colored trail, alongside everyone's Check In pins from the home page.</p>
+</div></header>
+<div class="wrap">
+<div class="loc-howto">
+<h3>How to get your export</h3>
+<p><b>Google:</b> if Location History / Timeline is on in the Google Maps app, go to <a href="https://takeout.google.com" target="_blank" rel="noopener">takeout.google.com</a> and export "Location History (Timeline)" as JSON.</p>
+<p><b>Apple:</b> no simple built-in export &mdash; use the Google Maps app (works on iPhone) or any GPX-exporting tracking app.</p>
+<p class="loc-note">Only points within the trip dates (Dec 19, 2026 &ndash; Jan 1, 2027) are kept.</p>
+</div>
+<div class="track-upload-grid">
+<div class="track-upload-slot" data-person-key="michael-lee">
+<span class="track-swatch" style="background:#C0392B"></span>
+<span class="track-name">Michael Lee</span>
+<input type="file" accept=".gpx,.json" style="display:none">
+<button type="button" class="track-upload-btn">Upload</button>
+<span class="track-status"></span>
+</div><div class="track-upload-slot" data-person-key="uwen-kok">
+<span class="track-swatch" style="background:#2980B9"></span>
+<span class="track-name">Uwen Kok</span>
+<input type="file" accept=".gpx,.json" style="display:none">
+<button type="button" class="track-upload-btn">Upload</button>
+<span class="track-status"></span>
+</div><div class="track-upload-slot" data-person-key="carl-kurbat">
+<span class="track-swatch" style="background:#27AE60"></span>
+<span class="track-name">Carl Kurbat</span>
+<input type="file" accept=".gpx,.json" style="display:none">
+<button type="button" class="track-upload-btn">Upload</button>
+<span class="track-status"></span>
+</div>
+</div>
+<div class="map-container" id="location-map"></div>
+<div class="loc-legend">
+<label class="loc-legend-item">
+<input type="checkbox" class="loc-legend-toggle" data-person-key="michael-lee" checked>
+<span class="loc-legend-swatch" style="background:#C0392B"></span>Michael Lee
+</label><label class="loc-legend-item">
+<input type="checkbox" class="loc-legend-toggle" data-person-key="uwen-kok" checked>
+<span class="loc-legend-swatch" style="background:#2980B9"></span>Uwen Kok
+</label><label class="loc-legend-item">
+<input type="checkbox" class="loc-legend-toggle" data-person-key="carl-kurbat" checked>
+<span class="loc-legend-swatch" style="background:#27AE60"></span>Carl Kurbat
+</label>
+</div>
+</div>
+<footer><div class="wrap">Tokyo, KL &amp; Singapore 2026–27 &middot; <a href="index.html">Back to all days</a></div></footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-app-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.15.0/firebase-firestore-compat.min.js"></script>
+<script src="assets/firebase-config.js"></script>
+<script src="assets/location-map.js"></script>
+</body></html>
