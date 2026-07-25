@@ -5,24 +5,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
-  --bg: #F5F6FD;
-  --bg-raised: #EEF0FB;
-  --ink: #1A1D4A;
-  --ink-soft: #5560B0;
-  --ink-faint: #8890C8;
-  --rule: #DDE0F5;
-  --rule-strong: #C0C8EC;
-  --navy: #3340AA;
-  --brass: #7C6ADB;
+  --bg: #F7F0F5;
+  --bg-raised: #EFE4EE;
+  --ink: #2A1020;
+  --ink-soft: #9B5070;
+  --ink-faint: #C090A8;
+  --rule: #EDD9E8;
+  --rule-strong: #DDB8CC;
+  --navy: #8B2252;
+  --brass: #C4587A;
 
-  --paris: #3340AA;
-  --paris-soft: #DDE0F5;
-  --london: #106690;
-  --london-soft: #D0EAF5;
-  --toronto: #6B3CAD;
-  --toronto-soft: #E8DCF5;
-  --travel: #7A8AB5;
-  --travel-soft: #E5E8F5;
+  --paris: #8B2252;
+  --paris-soft: #EDD9E8;
+  --london: #5C1535;
+  --london-soft: #F0D8E5;
+  --toronto: #C4587A;
+  --toronto-soft: #F5DDE8;
+  --travel: #A07888;
+  --travel-soft: #EFE4EE;
 
   --display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
   --body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
