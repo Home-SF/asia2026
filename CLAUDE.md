@@ -147,6 +147,19 @@ Use `content.replace(marker, new_html + '\n' + marker, 1)`.
 
 ---
 
+
+## ✅ Site Facts Rule (F6)
+Every activity/sight card on any activities page must include **two** fact blocks:
+
+1. **Did you know?** — an interesting fact most visitors don't know
+   `<div class="act-fact"><span class="act-fact-label">Did you know?</span> TEXT</div>`
+
+2. **Well known** — the headline fact the site is famous for
+   `<div class="act-fact act-known"><span class="act-fact-label">Well known</span> TEXT</div>`
+
+Both blocks go just before the `<a class="act-website">` link.
+When adding a new sight to any activities page, always include both facts.
+When creating a new trip site from scratch, inherit this rule into its CLAUDE.md.
 ## Standing Rules
 
 ### SCHEDULING & CALENDAR
