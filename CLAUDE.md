@@ -171,7 +171,19 @@ Whenever an event is added to a day page (`days/dec-XX.html`), also add it as a 
 Always order items on day pages chronologically by time. When inserting a new event, place it in time order, not just at the end.
 
 **S3 — Sunset time**  
-Add the local sunset time to every day page.
+Add the local sunset time to every day page using a `<span class="sunset-time">` element inside the `.day-hero .num` div — NOT as a timeline event. The span is populated automatically by `assets/sunset.js` (free, keyless sunrise-sunset.org API).
+
+Format:
+```html
+<div class="num">Day NN of NN <span class="sunset-time" data-lat="LAT" data-lon="LON" data-tz="IANA_TZ" data-date="YYYY-MM-DD"></span></div>
+```
+Also add `<script src="../assets/sunset.js"></script>` before the exif-js script on each day page.
+
+City coordinates:
+- Tokyo: lat=35.6762, lon=139.6503, tz=Asia/Tokyo
+- Kuala Lumpur: lat=3.1390, lon=101.6869, tz=Asia/Kuala_Lumpur
+- Singapore: lat=1.3521, lon=103.8198, tz=Asia/Singapore
+- SFO (departure day): lat=37.7749, lon=-122.4194, tz=America/Los_Angeles
 
 **S4 — Public holiday annotation**  
 Annotate the top of each day page with a note if there is a public holiday at that location on that date.
