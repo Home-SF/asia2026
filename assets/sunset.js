@@ -13,7 +13,7 @@
       if (!data || data.status !== "OK") { el.remove(); return; }
       var sunset = new Date(data.results.sunset);
       var timeStr = sunset.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: tz });
-      el.textContent = "\U{1F307} Sunset " + timeStr;
+      el.textContent = "🌇 Sunset " + timeStr;
     }).catch(function () { el.remove(); });
   }
 
